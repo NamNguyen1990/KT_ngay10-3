@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="Canh1" type="text">
+<input id="Canh2" type="text">
+<input id="Canh3" type="text">
+<button onclick="ThucThi()" type="submit">Kết Quả</button>
+<p id="HT"></p>
+<script>
+    function ThucThi() {
+        let a = document.getElementById('Canh1').value
+        let b = document.getElementById('Canh2').value
+        let c = document.getElementById('Canh3').value
+        let KQ = ""
+        if (+a + +b>+c && +a + +c>+b && +b + +c>+a){
+            KQ = " 3 số đã nhập là cạnh của 1 tam  giác"
+            if (+a==+b || +a==+c || +b=+c) {
+                KQ = "3 số đã nhập là cạnh của 1 tam  giác cân"
+            }
+            if (a==c && a==b) {
+                KQ = "3 số đã nhập là cạnh của 1 tam giác đều"
+            }
+            if (a*a + b*b = c*c || a*a + c*c = b*b || b*b + c*c = a*a) {
+                KQ = "3 số đã nhập là cạnh của 1 tam giác vuông"
+            }
+        }
+        document.getElementById('HT').innerHTML = KQ
+    }
+
+</script>
+</body>
+</html>
