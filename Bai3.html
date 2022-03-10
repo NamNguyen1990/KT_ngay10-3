@@ -5,7 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<input id="Dauvao1" type="text">
+<input id="Dauvao2" type="text">
+<button onclick="ThucThi()" type="submit">
+    Tính
+</button>
+<h1 id = HT></h1>
 <script>
-    let a
+    function ThucThi() {
+        let a = document.getElementById("Dauvao1").value
+        let b = document.getElementById("Dauvao2").value
+        let S = a*b
+        document.getElementById('HT').innerHTML = S
+    }
+
+
+</script>
+
 </body>
 </html>
