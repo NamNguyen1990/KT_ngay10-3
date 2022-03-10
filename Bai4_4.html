@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="DauVao" type="text">
+<button onclick="ThucThi()" type="submit"> Kết Quả</button>
+<p id="HT">Mời bạn nhập năm để hiển thị thế kỷ</p>
+
+<script>
+    function ThucThi() {
+        let a = document.getElementById('DauVao').value
+        let TK
+        if (a%100==0) {
+            TK = a/100;
+            document.getElementById('HT').innerHTML = TK
+        }else {
+            TK = parseInt(a/100) + 1
+            document.getElementById('HT').innerHTML = TK
+        }
+    }
+</script>
+</body>
+</html>
