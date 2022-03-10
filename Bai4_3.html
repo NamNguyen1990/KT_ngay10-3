@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="DauVao1" type="text">
+<input id="DauVao2" type="text">
+<button onclick="ThucThi()"> Kết Quả </button>
+<p id="HT"></p>
+<script>
+    function ThucThi() {
+        let a = document.getElementById('DauVao1').value
+        let b = document.getElementById('DauVao2').value
+        let c = ((+a + +b)*(b-a+1))/2
+        document.getElementById('HT').innerHTML = c
+    }
+</script>
+</body>
+</html>
