@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="Bien" type="text">
+<button onclick="ThucThi()" type="submit">Tính</button>
+<p id="HT1"></p>
+<p id="HT2"></p>
+<script>
+    function ThucThi(){
+        let a = document.getElementById('Bien').value
+        let CV = (+a + +a)/2
+        let DT = a*a
+        document.getElementById('HT1').innerHTML = CV
+        document.getElementById('HT2').innerHTML = DT
+
+    }
+
+
+</script>
+</body>
+</html>
