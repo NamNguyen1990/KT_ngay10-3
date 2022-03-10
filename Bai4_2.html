@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="DauVao1" type="text">
+<input id="DauVao2" type="text">
+<button onclick="ThucThi()" type="submit">
+    Kết Quả
+</button>
+<p id="HT1"></p>
+<p id="HT2"></p>
+<script>
+    function ThucThi() {
+        let a = document.getElementById('DauVao1').value
+        let b = document.getElementById('DauVao2').value
+        let c = a*a
+        let d = a**b
+        document.getElementById('HT1').innerHTML = c
+        document.getElementById('HT2').innerHTML = d
+    }
+
+
+</script>
+</body>
+</html>
