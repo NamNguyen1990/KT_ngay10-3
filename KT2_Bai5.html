@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [
+        [1,2,3],
+        [1,4,7]
+    ];
+    let min = a[i][j]
+    if (min%2 == 0)
+    for (let i = 0; i<a.length; i++) {
+        for (let j = 0; j<a[i].length;j++){
+            if (a[i][j]%2 ==0 && min > a[i][j])
+                min = a[i][j]
+        }
+    }
+    else {
+        min = min + 1
+        for (let i = 0; i<a.length; i++) {
+            for (let j = 0; j<a[i].length;j++){
+                if (a[i][j]%2 ==0 && min > a[i][j])
+                    min = a[i][j]
+            }
+        }
+    }
+    document.write(min)
+</script>
+</body>
+</html>
